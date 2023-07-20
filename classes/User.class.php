@@ -158,6 +158,7 @@ class user
                     $_SESSION['userid'] = $resultss['userid'];
                 }
             }
+            header('Location:home.php');
             $arlet = "<div class='alert alert-success' role='alert'>Login Successfully</div>";
             return $arlet;
         } else {

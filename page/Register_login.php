@@ -3,8 +3,8 @@ include '../inc/Header.php';
 if (isset($_SESSION['userid'])) {
     echo   $_SESSION['userid'];
 }
-$code = new user();
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $codeinsert = $code->loginuser($_POST);
 }
 ?>
